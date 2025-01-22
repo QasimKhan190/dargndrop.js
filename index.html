@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #dragItem {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: grab;
+            margin: auto;
+        }
+        #dropZone {
+            width: 200px;
+            height: 200px;
+            border: 2px dashed black;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+</style>
+<body>
+     <h2>Drag & Drop Events Demo</h2>
+<p>Drag the blue box and drop it into the dashed box.</p>
+
+<div id="dragItem" draggable="true">Drag Me</div>
+<div id="dropZone">Drop Here</div> 
+<p id="message">Try dragging and dropping the box!</p> 
+
+</body>
+<script src="script.js"></script>
+</html>
